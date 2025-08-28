@@ -37,17 +37,23 @@ The system extracts text from the PDF, generates a structured analysis, and then
 
 ## Project Structure
 financial-document-analyzer-fixed/
-│
-├── agents.py # Defines the financial analyst and verifier agents
-├── tools.py # Provides read_pdf_tool (pypdf-based)
-├── task.py # Defines the analysis and verification tasks
-├── main.py # FastAPI app with endpoints
-├── requirements.txt # Cleaned dependency list
-├── README.md # Documentation
-├── .env.example # Example environment variables (no real keys)
-│
-└── data/
-└── TSLA-Q2-2025-Update.pdf # Example PDF for testing
+
+agents.py # Defines the financial analyst and verifier agents
+
+tools.py # Provides read_pdf_tool (pypdf-based)
+
+task.py # Defines the analysis and verification tasks
+
+main.py # FastAPI app with endpoints
+
+requirements.txt # Cleaned dependency list
+
+README.md # Documentation
+
+env.example # Example environment variables (no real keys)
+
+data/
+TSLA-Q2-2025-Update.pdf # Example PDF for testing
 
 
 
@@ -71,11 +77,13 @@ source venv/bin/activate
 # Install dependencies:
 
 pip install --upgrade pip
+
 pip install -r requirements.txt
 
 # Add environment variables by creating a .env file:
 
 OPENAI_API_KEY=sk-your-key-here
+
 MODEL_NAME=gpt-4o-mini
 
 # Run the server:
