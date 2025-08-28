@@ -1,0 +1,22 @@
+click==8.1.7
+
+# CrewAI stack
+crewai==0.130.0
+crewai-tools==0.47.1
+
+# API stack
+fastapi==0.110.3
+uvicorn[standard]==0.30.1
+python-dotenv==1.0.1
+pydantic==2.8.2   # ✅ upgraded to v2 (required by FastAPI 0.110)
+
+# LLM + LangChain
+openai==1.30.5
+langchain==0.2.10
+langsmith==0.1.67
+pypdf==4.2.0      # PDF parsing
+
+# Optional (data handling / images)
+numpy==1.26.4
+pandas==2.2.2
+pillow==10.3.0
